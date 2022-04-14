@@ -7,17 +7,23 @@
     <title>ApiNasa</title>
 </head>
 <body>
+
     <form id="Form">
-        <input type="date" id="dtInput">
-        <input type="submit" id="pesquisar">
+        <input type="date" id="dtInput" min="1995-06-16">
+        <input type="submit" value="pesquisar" id="pesquisar">
     </form>
     
-    <div>
+    <h3>Nome: <span id="Nome"></span></h3>
+    <h3 id="trocarNome"></h3>
+    
+    <div class="menu">
         <img id="mostrarImg">
         <iframe id="mostrarVd"></iframe>
      </div>
+     
      <script src="https://code.jquery.com/jquery-3.6.0.js"
      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+     
      <script src="api.js"></script>
 </body>
 </html>
