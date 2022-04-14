@@ -4,22 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="api.css">
     <title>ApiNasa</title>
 </head>
 <body>
-
-    <form id="Form">
-        <input type="date" id="dtInput" min="1995-06-16">
-        <input type="submit" value="pesquisar" id="pesquisar">
-    </form>
     
-    <h3>Nome: <span id="Nome"></span></h3>
-    <h3 id="trocarNome"></h3>
+    <main>
+    
+    <form id="Form">
+        <h1>Vamos explorar !!</h1>
+        <label for="">Digite uma Data!!</label>
+        <div class="dt">
+        <input type="date" id="dtInput" min="1995-06-16">
+        </div>
+        <div class="sb">
+        <input type="submit" value="Pesquisar" id="pesquisar">
+        </div>
+    </form>
+   
+
+    <section>
+    <div class="aréaTexto">
+    <h4>Nome: <span id="Nome"></span></h4>
+    <h4>Tipo: <span id="trocarNome"><span></h4>
+    </div>
     
     <div class="menu">
+        <img class="wall" src="WALL-E.webp" alt="" srcset="">
         <img id="mostrarImg">
         <iframe id="mostrarVd"></iframe>
      </div>
+     
+    </section>
+    </main>
+   
+    <footer>
+
+    </footer>
      
      <script src="https://code.jquery.com/jquery-3.6.0.js"
      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
